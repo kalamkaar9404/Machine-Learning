@@ -20,7 +20,7 @@ for file in $(find . -type f -name "*.ipynb"); do
     git add "$file"
 
     # Commit the file with the original creation date as the commit date
-    GIT_COMMITTER_DATE="$commit_date" git commit --date="$commit_date" -m "Added $file with original timestamp"
+    GIT_COMMITTER_DATE="$commit_date" git commit --date="$commit_date" -m "Added $file"
 done
 
 # Push to Gi
